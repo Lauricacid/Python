@@ -5,13 +5,10 @@
     <title>Flights</title>
   </head>
   <body>
-    <h1>Flights</h1>
+    <h1>Flight {{ flight.id }}</h1>
     <ul>
-      {% for flight in flights %}
-        <li>
-          {{ flight }}
-        </li>
-      {% endfor %}
+        <li>Origin: {{ flight.origin }}</li>
+        <li>Destination: {{ flight.destination }}</li>
     </ul>
   </body>
 </html>
